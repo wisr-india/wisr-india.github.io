@@ -92,7 +92,32 @@
 				   
 		<br><br>
 
-				
+				<div class="w3-content w3-section" style="width:800px">
+  <h3 class="mySlides"> <span style="color:#838383;"> A community for gender minorities</span>   </h3>
+  <h3 class="mySlides"> <span style="color:#838383;"> A community for peer networking</span>   </h3>
+  <h3 class="mySlides"> <span style="color:#838383;">A community for all-round mentorship</span>  </h3>
+  <h3 class="mySlides"> <span style="color:#838383;"> A community for research collaborations</span>    </h3>
+  <h3 class="mySlides"> <span style="color:#838383;"> A community for personal learning</span>   </h3>
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+			
 				
 				
 				</div>
